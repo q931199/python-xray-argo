@@ -30,12 +30,12 @@ PROJECT_URL = os.environ.get('PROJECT_URL', '')        # 项目url,用于自动�
 AUTO_ACCESS = os.environ.get('AUTO_ACCESS', '').lower() == 'true'  # true开启自动保活,默认关闭
 FILE_PATH = os.environ.get('FILE_PATH', '.cache')      # 运行目录,sub.txt保存路径
 SUB_PATH = os.environ.get('SUB_PATH', 'sub')           # 订阅token
-UUID = os.environ.get('UUID', '1bfbf82a-526e-4f74-ad88-beddec33065d')  # UUID
-NEZHA_SERVER = os.environ.get('NEZHA_SERVER', 'nezha.dswdfds.cc.cd')      # 哪吒面板域名,v0：nezha.xxx.com  v1: nezha.xxx.com:8008
+UUID = os.environ.get('UUID', '6ce2b9d4-3ce0-4617-89fa-3d44f2a00645')  # UUID
+NEZHA_SERVER = os.environ.get('NEZHA_SERVER', '')      # 哪吒面板域名,v0：nezha.xxx.com  v1: nezha.xxx.com:8008
 NEZHA_PORT = os.environ.get('NEZHA_PORT', '')          # v1留空, v0填agent通信端口
-NEZHA_KEY = os.environ.get('NEZHA_KEY', 'qTFWjRclPpZtJbFco17xECzUMTlnaoaW')            # v1的NZ_CLIENT_SECRET或v0 agent密钥
-ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', 'kubulettto.q9311999.us.ci')        # Argo固定隧道域名,留空使用临时隧道
-ARGO_AUTH = os.environ.get('ARGO_AUTH', 'eyJhIjoiZjA0ZTk4NGJiNWMwNjlkNjZiZWFhODNlNWRkMjIwOWIiLCJ0IjoiYWUwMTUzMTktYzNlZS00NDdjLTg0MmQtZjA3OTFjMDBkZTlhIiwicyI6Ik5ERTFaRFptWkRRdE16TmlOUzAwWkdSa0xUazVNVFV0T0RVM05qRTJaRGt5T1RSbCJ9')            # Argo固定隧道token或json,留空使用临时隧道
+NEZHA_KEY = os.environ.get('NEZHA_KEY', '')            # v1的NZ_CLIENT_SECRET或v0 agent密钥
+ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', 'ecloudserv.q931199.us.ci')        # Argo固定隧道域名,留空使用临时隧道
+ARGO_AUTH = os.environ.get('ARGO_AUTH', 'eyJhIjoiZjA0ZTk4NGJiNWMwNjlkNjZiZWFhODNlNWRkMjIwOWIiLCJ0IjoiMTk3ZDgyOWQtMGMzZS00NjViLThjZDQtYzUwNWIxZTBjMDE1IiwicyI6IlpUTTFOV1l4T1RrdFlXUXpZeTAwTXpsaUxXSmlZbVV0WkRneU5XVmxPRGMzWkRVMCJ9')            # Argo固定隧道token或json,留空使用临时隧道
 ARGO_PORT = int(os.environ.get('ARGO_PORT', '8001'))   # Argo隧道端口
 S5_PORT = os.environ.get('S5_PORT', '')                # socks5端口,留空不开启
 HY2_PORT = os.environ.get('HY2_PORT', '')              # hy2端口,留空不开启
